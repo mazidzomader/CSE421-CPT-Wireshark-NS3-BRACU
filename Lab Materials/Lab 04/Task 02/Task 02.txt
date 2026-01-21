@@ -1,0 +1,27 @@
+R1>en
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int g0/0
+R1(config-if)#ip helper-address 192.168.60.253
+R1(config-if)#exit
+R1(config)#exit
+
+
+
+
+R1>en
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int g0/0
+R1(config-if)#ip helper-
+R1(config-if)#ip helper-address 192.168.60.253
+R1(config-if)#exit
+R1(config)#exit
+R1#
+%SYS-5-CONFIG_I: Configured from console by console
+
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#ip dhcp exclud
+R1(config)#ip dhcp excluded-address 192.168.50.1 192.168.50.10
+R1(config)#
